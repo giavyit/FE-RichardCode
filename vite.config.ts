@@ -8,7 +8,10 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
-  base: '/webamy-app/',
+  base: '/dist/',
+  build: {
+    manifest: true,
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
