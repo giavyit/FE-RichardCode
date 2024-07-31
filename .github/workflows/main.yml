@@ -25,9 +25,7 @@ jobs:
       run: npm run build
 
     - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4
+      uses: giavy.it/github-pages-deploy-action@v4
       with:
-        branch: gh-pages # Branch where your built files will be deployed
+        branch: develop # Branch where your built files will be deployed
         folder: dist # Folder containing your built files
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
