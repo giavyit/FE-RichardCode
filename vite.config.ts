@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
-  base: '/dist/',
+  base: '/FE-RichardCode/',
   build: {
     manifest: true,
   },
